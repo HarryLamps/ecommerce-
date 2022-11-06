@@ -15,13 +15,13 @@ class customer_class extends db_connection
     
     }
 
-    public function customer_log_cls($right_email, $right_pass)
+    public function customer_log_cls($right_email)
 	{
         // $right_email = mysqli_real_escape_string($this->db, $a);
         // $right_pass = mysqli_real_escape_string($this->db, $b);
 
         // select username and password
-		$sql = "SELECT * FROM customer where customer_email = '$right_email' and customer_pass = '$right_pass'";
+		$sql = "SELECT * FROM customer where customer_email = '$right_email' ";
 		// return $sql;
 		return $this->db_fetch_one($sql);
 	}

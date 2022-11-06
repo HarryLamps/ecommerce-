@@ -7,21 +7,37 @@ if (isset($_POST['login'])) {
     //get user register details
     $right_email = $_POST['email'];
     $right_pass = $_POST['password'];
+    
 
     //select controller
-    $check = select_customer_ctr($right_email, $right_pass);
+    $check = select_customer_ctr($right_email);
+    $Encryptpass = $check['customer_pass'];
 
-    if ($check) {
+
+
+    if ($check == true and password_verify($right_pass,$Encryptpass) == true and $check['user_role'] == 1) {
         //set session
         session_start();
         // print_r($check);
         $_SESSION['cid'] = $check['customer_id'];
         $_SESSION['role'] = $check['user_role'];
-        echo "<a href=home.php> Go to login</a>";
-    } else {
+       header("Location:../Admin/Admin.php");
+
+    } 
+    
+    else if ($check == true and password_verify($right_pass,$Encryptpass) == true and $check['user_role'] != 1) {
+        //set session
+        session_start();
+        // print_r($check);
+        $_SESSION['cid'] = $check['customer_id'];
+        $_SESSION['role'] = $check['user_role'];
+       header("Location:home.php");
+   }
+    else {
         
         echo "<script>alert('Email or Password is Wrong')</script>";
-        echo "<a href=login.php> Go to login</a>";
+        header("Location:login.php");
     }
+    
 }
 ?>

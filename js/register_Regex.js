@@ -8,14 +8,14 @@ function validate() {
     }
 
 
-	// validate email
-    // // checking and wrong for empty feilds in email 
-    // let emailTest = document.myForm.email.value.search(/^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/)
-    // if (document.myForm.email.value == "" || emailTest == -1) {
-    // 	alert("Enter a valid email!");
-    // 	document.myForm.email.focus();
-    // 	return false;
-    // }
+	//validate email
+    // checking and wrong for empty feilds in email 
+    let emailTest = document.myForm.email.value.search(/^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/)
+    if (document.myForm.email.value == "" || emailTest == -1) {
+    	alert("Enter a valid email!");
+    	document.myForm.email.focus();
+    	return false;
+    }
 
 
 

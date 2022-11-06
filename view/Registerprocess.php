@@ -14,16 +14,18 @@ if (isset($_POST['addReg'])) {
     $user_contact = $_POST['contact'];
     $user_image= null;
     $user_role = 2;
+    $Encryptpass= password_hash($user_password,PASSWORD_DEFAULT);
+
 
     //insert new customer controler
     $check = insert_new_customer_ctr($user_fullname,
-        $user_email,$user_password,$user_country,$user_city,$user_contact,$user_image,$user_role);
+        $user_email, $Encryptpass,$user_country,$user_city,$user_contact,$user_image,$user_role);
 
     //method check
     if ($check) {
         echo "<script>alert('Inserted Sucessfully')</script>";
         // header('location: login.php');
-        echo "<a href=login.php> Go to login</a>";
+        header('location:login.php');
     } 
     
 } else {

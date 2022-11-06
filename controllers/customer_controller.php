@@ -11,9 +11,9 @@ function insert_new_customer_ctr($name, $email ,$pass, $country, $city, $contact
     return $add_customer->addcustomer_cls($name, $email ,$pass, $country, $city, $contact,$role);
 }
 
-function select_customer_ctr($right_email, $right_pass)
+function select_customer_ctr($right_email)
 {
     $select_customer = new customer_class();
-    return $select_customer->customer_log_cls($right_email, $right_pass);
+    return $select_customer->customer_log_cls($right_email);
 }
 ?> 

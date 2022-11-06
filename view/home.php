@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>Hello :)</h1>
+    <a href="../actions/logout.php"><button> logout</button></a>
 </body>
 </html>
