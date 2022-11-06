@@ -24,3 +24,5 @@
 <a href="view/Pay.php">Paystack quiz </a> -->
 </body>
 </html>
+
+	
