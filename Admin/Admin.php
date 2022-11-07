@@ -26,6 +26,6 @@ if(empty($_SESSION['role'])and $_SESSION['role']!= 1){
 <a href="Category.php">Manage Categories </a> <br>
 <br>
 
-<a href="view/Pay.php">Paystack quiz </a>
+<a href="Product.php">Manage Products</a>
 </body>
 </html>

@@ -32,7 +32,7 @@ include("../controllers/product_controller.php");
 							<h2>Products</h2>
 						</div>
 						<div class="col-sm-6">
-							<a class ='btn btn-primary btn-sm' href='add_product.php'>Add</a>		
+							<a class ='btn btn-primary btn-sm' href='../view/add_product.php'>Add</a>		
 						</div>
 					</div>
 				</div>
@@ -72,7 +72,7 @@ include("../controllers/product_controller.php");
 							<td>$pkey</td>
 							<td>
 							<a class ='btn btn-outline-primary' href='singleProduct.php?pid=$pid''>View</a>
-							<a class ='btn btn-outline-info' href='updateProduct.php?pid=$pid'''>Update</a>
+							<a class ='btn btn-outline-info' href='../view/updateProduct.php?pid=$pid'''>Update</a>
 							<a class = 'btn btn-outline-danger'>Delete</a>
 							</td>
 							</tr>";

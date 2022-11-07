@@ -20,7 +20,7 @@ if (isset($_POST['udpProd'])){
 	//call a controller
 	$check = update_product_ctr($pidd,$pcat,$pbrand,$ptitle,$pprice,$pdesc,$pimg,$pkey);
 if ($check){
-		header("location:../view/Product.php");
+		header("location:../Admin/Product.php");
 		if(move_uploaded_file($_FILES['pimg']['tmp_name'], $target)){
 
 		}
