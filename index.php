@@ -16,7 +16,8 @@
 <a href="fetch.php">Fetch Data</a> <br>
 <br> -->
 <br>
-<br>
+
+<a href="view/Adminlogin.php">Admin Login</a>
 
 <!-- <a href="Admin/Category.php">Manage Categories </a> <br>
 <br>

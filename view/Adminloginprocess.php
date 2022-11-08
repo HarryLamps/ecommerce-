@@ -25,17 +25,10 @@ if (isset($_POST['login'])) {
 
     } 
     
-    else if ($check == true and password_verify($right_pass,$Encryptpass) == true and $check['user_role'] != 1) {
-        //set session
-        session_start();
-        // print_r($check);
-        $_SESSION['cid'] = $check['customer_id'];
-        $_SESSION['role'] = $check['user_role'];
-       header("Location:all_product.php");
-   }
+    
     else {
         
-        echo "<script>alert('Email or Password is Wrong')</script>";
+        echo "<script>alert('You are not the Admin')</script>";
         header("Location:login.php");
     }
     
