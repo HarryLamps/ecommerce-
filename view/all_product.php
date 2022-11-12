@@ -51,7 +51,7 @@ include("../settings/core.php");
 					<p class='small text-muted font-italic'>Price: GHs$pprice</p>
 
 
-					<a href='all_product.php' class='btn btn-primary'>Add to cart</a>
+					<a href='../actions/add_to_cart.php?pid=$pid' class='btn btn-primary'>Add to cart</a>
 					<a href='single_product.php?pid=$pid' class='btn btn-info'>View Product</a>
 					
 					</center>

@@ -59,7 +59,7 @@ include("../settings/core.php");
 
 
 			<!-- Add product form -->
-			<form action="../actions/Add_brand.php" method="POST">
+			<form action="../actions/add_brand.php" method="POST">
 				<div class="modal-header">						
 					<h4 class="modal-title">Add Brand</h4>
 					<!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->

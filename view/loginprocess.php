@@ -31,7 +31,7 @@ if (isset($_POST['login'])) {
         // print_r($check);
         $_SESSION['cid'] = $check['customer_id'];
         $_SESSION['role'] = $check['user_role'];
-       header("Location:all_product.php");
+       header("Location:user_dashboard.php");
    }
     else {
         

@@ -15,7 +15,7 @@ if (isset($_POST['addBrand'])) {
     //method check
     if ($check) {
         echo "<script>alert('Inserted Sucessfully')</script>";
-        echo "<a href=Brand.php> Go to login</a>";
+        header("location:../Admin/Brand.php");
     } 
     
 } else {

@@ -71,7 +71,7 @@ include("../controllers/product_controller.php");
 							<td>$pdesc</td>
 							<td>$pkey</td>
 							<td>
-							<a class ='btn btn-outline-primary' href='singleProduct.php?pid=$pid''>View</a>
+							<a class ='btn btn-outline-primary' href='../view/single_product.php?pid=$pid''>View</a>
 							<a class ='btn btn-outline-info' href='../view/updateProduct.php?pid=$pid'''>Update</a>
 							<a class = 'btn btn-outline-danger'>Delete</a>
 							</td>
