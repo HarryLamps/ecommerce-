@@ -116,7 +116,7 @@ $overall_price_a = $overall_price['SUM(products.product_price*cart.qty)'];
                     </div> 
                     <div class="card-footer">
                         <a href='payment.php' class='btn btn-warning'>Check Out</a>
-                        <a href='allproducts.php' class='btn btn-outline-secondary' style="margin-top:20px;">Continue Shopping</a>
+                        <a href='all_product.php' class='btn btn-outline-secondary' style="margin-top:20px;">Continue Shopping</a>
                     </div>
                 </div>
             </div>

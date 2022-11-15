@@ -53,6 +53,7 @@ include("../settings/core.php");
 
 					<a href='../actions/add_to_cart.php?pid=$pid' class='btn btn-primary'>Add to cart</a>
 					<a href='single_product.php?pid=$pid' class='btn btn-info'>View Product</a>
+					<a href='cart.php?pid=$pid' class='btn btn-info'>Go to cart</a>
 					
 					</center>
 					</div>
@@ -64,6 +65,7 @@ include("../settings/core.php");
 
 				}
 
+				
 				?>
 
 
